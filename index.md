@@ -21,11 +21,3 @@ This is it so far.
 
 <img style="height:500px; width:1000px" src="images/john pork.jpeg" alt="john pork">
 
-## Weekly Progress
-
-8/21-8/25 - I was able to start saving my work and make my first edits on my blog. This included changing the theme, my first change of text, adding my first link, and adding my first image. 
-
-With the help of a friend in CSA, I was able to resize my image and make it wide. Yippeee!!
-
-Here is a picture of my friend Perell.
-<img src="images/mind.jpg" alt="mind">
