@@ -15,5 +15,8 @@ With the help of a friend in CSA, I was able to resize my image and make it wide
 Since he helped me, I am able to show a picture of my friend Perell.
 <img src="images/mind.jpg" alt="mind">
 
+Hacks: 
+
+
 # Week 1:
 8/28-9/1 - 
