@@ -1,6 +1,9 @@
 ---
 layout: schedule
-title: Computer Science Lab Notebook
-units: "1,2"
-course: compsci
+title: First Blog
+description: notebook
+toc: true
+comments: true
+course: {csse: {week: 1}}
+type: hacks
 ---

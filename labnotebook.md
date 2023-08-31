@@ -1,9 +1,12 @@
 ---
-layout: default
-permalink: /notebook
-title: Lab Notebook
+layout: post
+title: First Blog
+description: notebook
+toc: true
+comments: true
+course: {csse: {week: 1}}
+type: hacks
 ---
-
 
 ## Dean Blog Lab Notebook
 
