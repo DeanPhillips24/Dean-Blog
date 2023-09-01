@@ -4,7 +4,7 @@ title: Snake Game
 description: This is the snake game 
 toc: True
 comments: True
-courses: {'csse': {'week': 1}}
+courses: {'csse': {'week': 2}}
 type: hacks
 ---
 
