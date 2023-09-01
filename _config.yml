@@ -2,7 +2,7 @@ title: Dean Blog
 description: "August 2023 to June 2024"
 owner_name: Dean Phillips
 github_username: DeanPhillips24
-baseurl: "/Dean-Blog"
+baseurl: "/DeanPhillips24"
 remote_theme: pages-themes/hacker@v0.2.0
 # remote_theme: pages-themes/dinky@v0.2.0
 # remote_theme: pages-themes/cayman@v0.2.0
