@@ -14,7 +14,7 @@ I was able to do this by following the instructions on the CSSE website and a li
 
 I learned that if you want to put in big text, use two ##'s. I also now know that if you want to add a link, you put the title in brackets and the link in parentheses. [MyConnect](poway.instructure.com)
 
-This is it so far. yessirski.
+This is it so far. Yessirski.
 
 ## Freeform Image
 <img src="images/Freeform image.jpg" alt="Freeform image">
