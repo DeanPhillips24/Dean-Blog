@@ -8,6 +8,8 @@ title: Student Blog
 
 ## <img style="height:300px;width:200px" src="images/ltg.jpg" alt="ltg">  - A portrait of myself.
 
+<img src="images/ltg.gif" alt="ltg2">
+
 This is my first edit on my home page.
 
 I was able to do this by following the instructions on the CSSE website and a little bit of experimenting.
@@ -20,4 +22,3 @@ This is it so far. Yessirski.
 <img src="images/Freeform image.jpg" alt="Freeform image">
 
 <img style="height:500px; width:1000px" src="images/john pork.jpeg" alt="john pork">
-
