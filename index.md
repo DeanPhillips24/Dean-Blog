@@ -8,7 +8,7 @@ title: Student Blog
 
 ## <img style="height:300px;width:200px" src="images/ltg.jpg" alt="ltg">  - A portrait of myself.
 
-<img src="images/ltg.gif" alt="ltg2">
+<img src="images/ltg.gif" alt="ltg">
 
 This is my first edit on my home page.
 
