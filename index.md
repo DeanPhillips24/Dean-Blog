@@ -16,13 +16,16 @@ title: Student Blog
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-    <p>This is my first edit on my home page.</p>
+    <div style="text-align: center;">
+        <p>
+        This is my first edit on my home page. <br><br>
+        I was able to do this by following the instructions on the CSSE website and a little bit of experimenting. <br><br>
+        I learned that if you want to put in big text, use two ##'s. I also now know that if you want to add a link, you put the title in brackets and the link in parentheses. [MyConnect](https://poway.instructure.com) <br><br>
+        This is it so far. Yessirski.
+        </p>
+    </div>
+</div>
 
-    <p>I was able to do this by following the instructions on the CSSE website and a little bit of experimenting.</p>
-
-    <p>I learned that if you want to put in big text, use two ##'s. I also now know that if you want to add a link, you put the title in brackets and the link in parentheses. [MyConnect](https://poway.instructure.com)</p>
-
-    <p>This is it so far. Yessirski.</p></div>
 <div style="display: flex; justify-content: center; align-items: center;"> 
 <h3>Freeform Image</h3>
 </div>
