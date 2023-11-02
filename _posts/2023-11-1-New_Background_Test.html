@@ -13,6 +13,7 @@ courses: { csse: {week: 11} }
                 <button class="topMenuBtn" id="mainMenuBtn">Main Menu</button>
                 <button class="topMenuBtn" id="inventoryBtn">Inventory</button>
                 <button class="topMenuBtn" id="mapBtn">Map</button>
+                <button class="topMenuBtn" id="musicBtn">Toggle Music</button>
             </div>
             <canvas id="gameContainer">
                 <img id="loadingScreen" src="../../../images/loadingscreen.png"/>
@@ -24,6 +25,22 @@ courses: { csse: {week: 11} }
                 <img class="backgroundImage" id="lab" width="800" height="700" src="../../../images/mortlabbackground.png" showBoxes="false"/>
 
                 <img id="lopezSprite" src="../../../images/lopezspritesheet3.png">
+
+                <audio id="houseAudio">
+                    <source src="../../../assets/css/music/Banjo_Music.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="avenidaTownAudio">
+                    <source src="../../../assets/css/music/Avenida_Town_Music.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="route1Audio">
+                    <source src="../../../assets/css/music/Route_Music.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="academyAudio">
+                    <source src="../../../assets/css/music/Academy_Music.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="labAudio">
+                    <source src="../../../assets/css/music/Academy_Town_Music.mp3" type="audio/mpeg">
+                </audio>
 
                 <div id="downStairsCarpet" is="collider-zone" width="60" height="105" x="560" y="230" newBackground="housefloor1" newX="700" newY="200" backgroundId="housefloor2"></div>
                 <div id="upStairsCarpet" is="collider-zone" width="20" height="100" x="616" y="124" newBackground="housefloor2" newX="436" newY="216" backgroundId="housefloor1"></div>
@@ -172,33 +189,14 @@ courses: { csse: {week: 11} }
                 <div is="hit-box" height="139" width="2" x="798" y="142" backgroundId="lab"></div> <!-- right wall 2 -->
                 <div is="hit-box" height="134" width="2" x="0" y="144" backgroundId="lab"></div> <!-- left wall 1 -->
                 <div is="hit-box" height="44" width="2" x="0" y="424" backgroundId="lab"></div> <!-- left wall 2 -->
-            </canvas>
-
-            <audio id="houseAudio">
-                <source src="../../../assets/css/music/Banjo_Music.mp3" type="audio/mpeg">
-            </audio>
-            <audio id="avenidaTownAudio">
-                <source src="../../../assets/css/music/Avenida_Town_Music.mp3" type="audio/mpeg">
-            </audio>
-            <audio id="route1Audio">
-                <source src="../../../assets/css/music/Route_Music.mp3" type="audio/mpeg">
-            </audio>
-            <audio id="academyAudio">
-                <source src="../../../assets/css/music/Academy_Music.mp3" type="audio/mpeg">
-            </audio>
-            <audio id="labAudio">
-                <source src="../../../assets/css/music/Academy_Town_Music.mp3" type="audio/mpeg">
-            </audio>
-                        
+            </canvas>   
         </div>
     </div>
 </html>
 
 <script src="../../../scripts/app.js" type="module"></script>
 
-<script src="../../../scripts/logic.js" type="module"></script> 
-
-<script src="../../../scripts/music.js" type="module"></script>
+<script src="../../../scripts/musiclogic.js" type="module"></script> 
 
 
 <style>

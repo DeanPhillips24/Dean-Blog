@@ -1,29 +1,24 @@
-// Background is House Floor 2 or 1
-if (newBackgroundId === "housefloor2" || newBackgroundId === "housefloor1") {
-    const houseAudio = document.getElementById("houseAudio");
-    houseAudio.play();
+// Define a function to play audio for a given background
+function playAudio(audioId) {
+    const audio = document.getElementById(audioId);
+    audio.play();
 }
 
-// Background is Avenida Town
-if (newBackgroundId === "avenidaTown") {
-    const avenidaTownAudio = document.getElementById("avenidaTownAudio");
-    avenidaTownAudio.play();
-}
+// Add event listener to the button to play audio for the current background
+document.getElementById("playBackgroundMusic").addEventListener("click", function () {
+    // Determine the current background (you can replace this logic with your own)
+    const currentBackground = "housefloor2"; // Change this to your actual background detection logic
 
-// Background is Route 1
-if (newBackgroundId === "route1") {
-    const route1Audio = document.getElementById("route1Audio");
-    route1Audio.play();
-}
-
-// Background is Academy
-if (newBackgroundId === "academy") {
-    const academyAudio = document.getElementById("academyAudio");
-    academyAudio.play();
-}
-
-// Background is Lab
-if (newBackgroundId === "lab") {
-    const labAudio = document.getElementById("labAudio");
-    labAudio.play();
-}
+    // Play the audio based on the current background
+    if (currentBackground === "housefloor2" || currentBackground === "housefloor1") {
+        playAudio("houseAudio");
+    } else if (currentBackground === "avenidaTown") {
+        playAudio("avenidaTownAudio");
+    } else if (currentBackground === "route1") {
+        playAudio("route1Audio");
+    } else if (currentBackground === "academy") {
+        playAudio("academyAudio");
+    } else if (currentBackground === "lab") {
+        playAudio("labAudio");
+    }
+});
