@@ -7,6 +7,8 @@ courses: { csse: {week: 11} }
 ---
 
 <html>
+    <script src="../../../scripts/newmusic.js" type="module"></script>
+
     <div id="gameWrapper" class="gameWrapper">
         <div id="frameWrapper" class="frameWrapper">
             <div id="topMenu">
@@ -26,8 +28,8 @@ courses: { csse: {week: 11} }
 
                 <img id="lopezSprite" src="../../../images/lopezspritesheet3.png">
 
-                <audio id="houseAudio">
-                    <source src="../../../assets/css/music/Banjo_Music.mp3" type="audio/mpeg">
+                <audio id="houseAudio" preload="auto">
+                    <source src="{{../../../}}assets/css/music/Banjo_Music.mp3" type="audio/mpeg">
                 </audio>
                 <audio id="avenidaTownAudio">
                     <source src="../../../assets/css/music/Avenida_Town_Music.mp3" type="audio/mpeg">
@@ -195,9 +197,6 @@ courses: { csse: {week: 11} }
 </html>
 
 <script src="../../../scripts/app.js" type="module"></script>
-
-<script src="../../../scripts/musiclogic.js" type="module"></script> 
-
 
 <style>
     .frameWrapper {
