@@ -1,11 +1,11 @@
 // Define an object to map background IDs to their corresponding music files
 const backgroundMusicMap = {
-    housefloor2: '../../../assets/music/css/Banjo_Music.mp3',
-    housefloor1: '../../../assets/music/css/Banjo_Music.mp3',
-    avenidaTown: '../../../assets/music/css/Avenida_Town_Music.mp3',
-    route1: '../../../assets/music/css/Route.mp3',
-    academy: '../../../assets/music/css/Academy_Music.mp3',
-    lab: '../../../assets/music/css/Academy_Town_Music.mp3',
+    housefloor2: '../../../assets/css/music/Banjo_Music.mp3',
+    housefloor1: '../../../assets/css/music/Banjo_Music.mp3',
+    avenidaTown: '../../../assets/css/music/Avenida_Town_Music.mp3',
+    route1: '../../../assets/css/music/Route_Music.mp3',
+    academy: '../../../assets/css/music/Academy_Music.mp3',
+    lab: '../../../assets/css/music/Academy_Town_Music.mp3',
   };
   
   // Define an object to map background IDs to audio elements
@@ -27,11 +27,12 @@ const backgroundMusicMap = {
   
     // Play the audio for the specified background
     const audio = backgroundAudioMap[backgroundId];
+    audio.muted = false; // Unmute
     audio.play();
   }
   
   // Function to toggle music play/pause
-  let isMusicPlaying = true;
+  let isMusicPlaying = false;
   
   function toggleMusic() {
     if (isMusicPlaying) {
