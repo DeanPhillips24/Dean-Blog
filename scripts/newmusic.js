@@ -66,11 +66,28 @@ const backgroundMusicMap = {
     return 'defaultBackground';
   }
   
+  // MutationObserver checks for changes in backgroundId
+  const targetNode = document.body;
+  const config = { attributes: true, attributeFilter: ['id']};
+
+  const observer = new MutationObserver((mutationsList) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'id') {
+        // Background ID change so update music
+        const currentBackgroundId = getCurrentBackgroundId();
+        playBackgroundMusic(currentBackgroundId);
+      }
+    }
+  });
+
+  // Observer target node for changes
+  observer.observe(targetNode, config);
+
   // Add a click event listener to the "Toggle Music" button
   const musicButton = document.getElementById('musicBtn');
   const audioElement = document.getElementById('houseAudio');
 
   musicButton.addEventListener('click', toggleMusic);
   
-  // Example of calling playBackgroundMusic with a backgroundId
+  // Start music with initial background
   playBackgroundMusic('housefloor1');
