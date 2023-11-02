@@ -1,24 +1,27 @@
-// Function to play audio
-function playAudio(audioId) {
-    const audio = document.getElementById(audioId);
-    if(audio) {
-        audio.play();
-    }
-}
-
 // Function to play audio based on the current background
 function playAudioForBackground(currentBackground) {
-    // Play the audio based on the current background
-    if (currentBackground === "housefloor2" || currentBackground === "housefloor1") {
-        playAudio("houseAudio");
-    } else if (currentBackground === "avenidaTown") {
-        playAudio("avenidaTownAudio");
-    } else if (currentBackground === "route1") {
-        // Play audio for Route 1, add similar code for other backgrounds
+    const audioElements = {
+        housefloor1: document.getElementById("houseAudio"),
+        avenidaTown: document.getElementById("avenidaTownAudio"),
+        route1: document.getElementById("route1Audio"),
+    };
+
+    // Pause all audio elements
+    for (const key in audioElements) {
+        if (audioElements.hasOwnProperty(key)) {
+            audioElements[key].pause();
+        }
+    }
+
+    // Play audio based on the current background
+    const audioElement = audioElements[currentBackground];
+    if (audioElement) {
+        audioElement.currentTime = 0;
+        audioElement.play();
     }
 }
 
-// Function to update collisions based on the current background
+// Function to update collisions and play music
 function updateCollisionsAndPlayMusic() {
     const currentBackgroundId = getCurrentBackgroundId();
 
@@ -28,7 +31,7 @@ function updateCollisionsAndPlayMusic() {
     // Iterate through collision zones and hide/show based on the background ID
     collisionZones.forEach((zone) => {
         const backgroundId = zone.getAttribute("backgroundId");
-        
+
         if (backgroundId === currentBackgroundId) {
             zone.style.display = "block";
         } else {
