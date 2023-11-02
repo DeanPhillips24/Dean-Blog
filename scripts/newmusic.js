@@ -68,11 +68,11 @@ const backgroundMusicMap = {
   
   // MutationObserver checks for changes in backgroundId
   const targetNode = document.body;
-  const config = { attributes: true, attributeFilter: ['id']};
+  const config = { attributes: false, childList: true, subtree: true };
 
   const observer = new MutationObserver((mutationsList) => {
     for (const mutation of mutationsList) {
-      if (mutation.type === 'attributes' && mutation.attributeName === 'id') {
+      if (mutation.type === 'childList') {
         // Background ID change so update music
         const currentBackgroundId = getCurrentBackgroundId();
         playBackgroundMusic(currentBackgroundId);
