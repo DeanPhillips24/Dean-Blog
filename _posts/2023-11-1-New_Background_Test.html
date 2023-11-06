@@ -24,9 +24,10 @@ courses: { csse: {week: 11} }
                 <img class="backgroundImage" id="avenidaTown" width="800" height="700" src="../../../images/maps/AvenidaFull.png" showBoxes="false" newScaleFactor="0.6"/>
                 <img class="backgroundImage" id="route1" width="800" height="700" src="../../../images/maps/Route2.png" showBoxes="false" newScaleFactor="0.9"/>
                 <img class="backgroundImage" id="academy" width="800" height="700" src="../../../images/maps/Pokemort_AcademyFull.png" showBoxes="false" newScaleFactor="0.6"/>
-                <img class="backgroundImage" id="lab" width="800" height="700" src="../../../images/mortlabbackground.png" showBoxes="false"/>
+                <img class="backgroundImage" id="lab" width="800" height="700" src="../../../images/newlab.png" showBoxes="false"/>
 
                 <img id="lopezSprite" src="../../../images/lopezspritesheet3.png">
+                <img id="mortSprite" src="../../../images/transparentmortspritesheet.png">
 
                 <audio id="houseAudio" preload="auto">
                     <source src="{{ site.baseurl }}/assets/css/music/Banjo_Music.mp3" type="audio/mpeg">
@@ -191,7 +192,7 @@ courses: { csse: {week: 11} }
                 <div is="hit-box" height="139" width="2" x="798" y="142" backgroundId="lab"></div> <!-- right wall 2 -->
                 <div is="hit-box" height="134" width="2" x="0" y="144" backgroundId="lab"></div> <!-- left wall 1 -->
                 <div is="hit-box" height="44" width="2" x="0" y="424" backgroundId="lab"></div> <!-- left wall 2 -->
-            </canvas>   
+            </canvas> 
         </div>
     </div>
 </html>
@@ -251,4 +252,14 @@ courses: { csse: {week: 11} }
     #lopezSprite {
         z-index: 100;
     }
+
+    #textContent {
+    position: absolute;
+    left: 400px !important; /* Adjust as needed */
+    top: 990px !important; /* Adjust as needed */
+    z-index: 2; /* Ensure text is above the canvas and textbox */
+    color: #000000;
+    font-size: 24px; /* Adjust font size as needed */
+    }
+
 </style>
