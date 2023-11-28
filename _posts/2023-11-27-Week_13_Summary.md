@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Week 13 Summary
 description: This goes over what we did in our project
-type: plans
+type: tangibles
 courses: { csse: {week: 13} }
 ---
 
